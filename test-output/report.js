@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("D:/BCSM13/FreeCRMBDDFramework/src/main/java/Features/deals.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("D:/BCSM13/FreeCRMBDDFramework/src/main/java/Features/dealsmap.feature");
 formatter.feature({
   "line": 1,
   "name": "Deal data creation",
@@ -30,104 +30,138 @@ formatter.step({
   "rows": [
     {
       "cells": [
+        "username",
+        "password"
+      ],
+      "line": 7
+    },
+    {
+      "cells": [
         "alok4u",
         "iamalok"
       ],
-      "line": 7
+      "line": 8
     }
   ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 8,
-  "name": "user clicks on login button",
   "keyword": "Then "
 });
 formatter.step({
   "line": 9,
-  "name": "user is on Home page",
+  "name": "user clicks on login button",
   "keyword": "Then "
 });
 formatter.step({
   "line": 10,
-  "name": "user moves to new deal page",
+  "name": "user is on Home page",
   "keyword": "Then "
 });
 formatter.step({
   "line": 11,
+  "name": "user moves to new deal page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 12,
   "name": "user enters deal details",
   "rows": [
     {
       "cells": [
-        "test deal",
+        "title",
+        "amount",
+        "probability",
+        "commission"
+      ],
+      "line": 13
+    },
+    {
+      "cells": [
+        "test deal1",
         "1000",
         "50",
         "10"
       ],
-      "line": 12
+      "line": 14
+    },
+    {
+      "cells": [
+        "test deal2",
+        "2000",
+        "60",
+        "20"
+      ],
+      "line": 15
+    },
+    {
+      "cells": [
+        "test deal",
+        "3000",
+        "70",
+        "30"
+      ],
+      "line": 16
     }
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 13,
+  "line": 17,
   "name": "close the browser",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "DealStepDefinition.User_is_already_on_Login_Page()"
+  "location": "DealStepWithMapDefinition.User_is_already_on_Login_Page()"
 });
 formatter.result({
-  "duration": 28109803000,
+  "duration": 46305512300,
   "status": "passed"
 });
 formatter.match({
-  "location": "DealStepDefinition.Title_of_login_page_is_Free_CRM()"
+  "location": "DealStepWithMapDefinition.Title_of_login_page_is_Free_CRM()"
 });
 formatter.result({
-  "duration": 46625600,
+  "duration": 295519500,
   "status": "passed"
 });
 formatter.match({
-  "location": "DealStepDefinition.user_enters_username_and_password(DataTable)"
+  "location": "DealStepWithMapDefinition.user_enters_username_and_password(DataTable)"
 });
 formatter.result({
-  "duration": 1056443800,
+  "duration": 1718839600,
   "status": "passed"
 });
 formatter.match({
-  "location": "DealStepDefinition.user_clicks_on_login_button()"
+  "location": "DealStepWithMapDefinition.user_clicks_on_login_button()"
 });
 formatter.result({
-  "duration": 11293294800,
+  "duration": 10636985300,
   "status": "passed"
 });
 formatter.match({
-  "location": "DealStepDefinition.user_is_on_Home_page()"
+  "location": "DealStepWithMapDefinition.user_is_on_Home_page()"
 });
 formatter.result({
-  "duration": 8167800,
+  "duration": 7255600,
   "status": "passed"
 });
 formatter.match({
-  "location": "DealStepDefinition.user_moves_to_new_contact_page()"
+  "location": "DealStepWithMapDefinition.user_moves_to_new_contact_page()"
 });
 formatter.result({
-  "duration": 3304699900,
+  "duration": 15206231200,
   "status": "passed"
 });
 formatter.match({
-  "location": "DealStepDefinition.user_enters_contacts_details(DataTable)"
+  "location": "DealStepWithMapDefinition.user_enters_contacts_details(DataTable)"
 });
 formatter.result({
-  "duration": 711322800,
+  "duration": 16127355700,
   "status": "passed"
 });
 formatter.match({
-  "location": "DealStepDefinition.close_the_browser()"
+  "location": "DealStepWithMapDefinition.close_the_browser()"
 });
 formatter.result({
-  "duration": 868259400,
+  "duration": 852187400,
   "status": "passed"
 });
 });
